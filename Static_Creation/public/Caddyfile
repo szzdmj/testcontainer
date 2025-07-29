@@ -1,9 +1,6 @@
-:8080 {
-root * ./public/
-	
-handle_path /index.php* {
-php_server
-}
-handle {
-	file_server
-}
+:8080
+
+root * /srv
+
+php_fastcgi unix//run/php/php7.4-fpm.sock
+file_server
