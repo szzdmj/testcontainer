@@ -3,13 +3,7 @@
   "compatibility_date": "2025-07-29",
   "experimental": {
     "containers": {
-      "services": [
-        {
-          "name": "default",
-          "image": "registry.cloudflare.com/ced06d7d7bc5c6126a23166c724068b1/frankenphp:5be92770",
-          "entrypoint": ["/start.sh"]
-        }
-      ]
+      "image": "registry.cloudflare.com/ced06d7d7bc5c6126a23166c724068b1/frankenphp:5be92770" // 替换成您需要部署的镜像
     }
   }
 }
