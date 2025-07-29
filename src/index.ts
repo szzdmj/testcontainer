@@ -1,7 +1,5 @@
 export default {
-  async fetch() {
-    return new Response("container launched", {
-      headers: { "content-type": "text/plain" },
-    });
+  async fetch(request: Request, env: any, ctx: ExecutionContext): Promise<Response> {
+    return env.testcontainer.fetch(request)
   },
 };
