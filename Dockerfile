@@ -26,5 +26,5 @@ COPY ./Caddyfile /app/Caddyfile
 RUN sed -i 's|listen = .*|listen = 9000|' /etc/php/*/fpm/pool.d/www.conf
 
 # 设置默认命令：同时启动 PHP-FPM 和 Caddy
-CMD ["sh", "-c", "php-fpm8.1 -D && caddy run --config /app/Caddyfile --adapter caddyfile"]
-    
+CMD ["sh", "-c", "php-fpm -D && caddy run --config /app/Caddyfile --adapter caddyfile"]
+   
