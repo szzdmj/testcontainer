@@ -1,7 +1,10 @@
-// wrangler.jsonc
 {
-   "name": "testcontainer",
-   "compatibility_date": "2025-07-28",
--  "assets": "./Static_Creation/public",
-+  // 移除 "assets" 字段
+  "name": "testcontainer",
+  "compatibility_date": "2025-07-29",
+  "assets": "./Static_Creation/public",
+  "containers": {
+    "testcontainer": {
+      "image": "ghcr.io/szzdmj/testcontainer:latest"
+    }
+  }
 }
