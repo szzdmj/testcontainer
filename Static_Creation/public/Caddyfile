@@ -1,6 +1,5 @@
 :8080
 
 root * /app/public
+php_fastcgi 0.0.0.0:9000
 file_server
-
-php_fastcgi 127.0.0.1:9000
