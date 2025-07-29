@@ -2,10 +2,27 @@
   "name": "testcontainer",
   "compatibility_date": "2025-07-29",
   "main": "src/index.ts",
+
   "containers": [
     {
       "class_name": "Container",
       "image": "Dockerfile"
+    }
+  ],
+
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "container",
+        "class_name": "Container"
+      }
+    ]
+  },
+
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_classes": ["Container"]
     }
   ]
 }
