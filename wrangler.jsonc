@@ -1,16 +1,20 @@
 {
   "name": "testcontainer",
   "compatibility_date": "2025-07-29",
-  "build": {
-    "upload": {
-      "format": "modules",
-      "dir": "./Static_Creation/public"
-    }
-  },
+  "main": "src/index.ts",
   "containers": [
     {
-      "service": "testcontainer",
-      "image": "ghcr.io/szzdmj/testcontainer:latest"
+      "binding": "testcontainer",
+      "class_name": "TestContainer",
+      "image": "./Dockerfile"
     }
-  ]
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "testcontainer",
+        "class_name": "TestContainer"
+      }
+    ]
+  }
 }
