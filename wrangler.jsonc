@@ -1,0 +1,15 @@
+{
+  "name": "testcontainer",
+  "compatibility_date": "2025-07-29",
+  "experimental": {
+    "containers": {
+      "services": [
+        {
+          "name": "default",
+          "image": "registry.cloudflare.com/<your-account-id>/frankenphp:5be92770",
+          "entrypoint": ["/start.sh"]
+        }
+      ]
+    }
+  }
+}
