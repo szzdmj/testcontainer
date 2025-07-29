@@ -1,6 +1,7 @@
-// 这是一个空壳 Durable Object，满足 Cloudflare 的结构要求
-export class Container {
+import { SQLiteDurableObject } from "@cloudflare/kv-asset-handler";
+
+export class Container extends SQLiteDurableObject {
   async fetch(request: Request): Promise<Response> {
-    return new Response("This DO is unused");
+    return new Response("Container DO active, but not used yet.");
   }
 }
