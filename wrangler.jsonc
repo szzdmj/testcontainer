@@ -6,7 +6,7 @@
     {
       "binding": "testcontainer",
       "class_name": "TestContainer",
-      "image": "./Dockerfile"
+      "image": "Dockerfile"
     }
   ],
   "durable_objects": {
