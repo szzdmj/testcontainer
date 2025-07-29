@@ -6,7 +6,7 @@
       "services": [
         {
           "name": "default",
-          "image": "registry.cloudflare.com/xianyue5165@gmail.com/frankenphp:5be92770",
+          "image": "registry.cloudflare.com/ced06d7d7bc5c6126a23166c724068b1/frankenphp:5be92770",
           "entrypoint": ["/start.sh"]
         }
       ]
