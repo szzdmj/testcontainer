@@ -1,6 +1,6 @@
 :8080
 
-root * /srv
-
-php_fastcgi unix//run/php/php7.4-fpm.sock
+root * /app/public
 file_server
+
+php_fastcgi 127.0.0.1:9000
