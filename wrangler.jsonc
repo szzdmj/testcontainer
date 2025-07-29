@@ -1,12 +1,12 @@
 {
   "name": "testcontainer",
-  "compatibility_date": "2025-07-29",
+  "compatibility_date": "2024-04-05",
   "experimental": {
     "containers": {
-      "image": "registry.cloudflare.com/ced06d7d7bc5c6126a23166c724068b1/frankenphp:5be92770" // 替换成您需要部署的镜像
+      "enabled": true
     }
+  },
+  "assets": {
+    "directory": "./Static_Creation/public"
   }
-"assets": {
-	      "directory": "./dist"
-	    }
 }
