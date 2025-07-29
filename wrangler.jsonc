@@ -1,26 +1,7 @@
 {
   "name": "testcontainer",
-  "main": "src/index.ts",
-  "compatibility_date": "2024-06-20",
-
-  "durable_objects": {
-    "bindings": [
-      {
-        "name": "container",
-        "class_name": "Container"
-      }
-    ]
-  },
-
-  // ✅ 添加 migrations
-  "migrations": [
-    {
-      "tag": "v1",              // 可自定义标记名称
-      "new_classes": ["Container"]
-    }
-  ],
-
-  "build": {
-    "command": "true"
+  "compatibility_date": "2025-07-29",
+  "container": {
+    "image": "Dockerfile"
   }
 }
