@@ -1,10 +1,16 @@
 {
   "name": "testcontainer",
   "compatibility_date": "2025-07-29",
-  "assets": "./Static_Creation/public",
-  "containers": {
-    "testcontainer": {
+  "build": {
+    "upload": {
+      "format": "modules",
+      "dir": "./Static_Creation/public"
+    }
+  },
+  "containers": [
+    {
+      "service": "testcontainer",
       "image": "ghcr.io/szzdmj/testcontainer:latest"
     }
-  }
+  ]
 }
