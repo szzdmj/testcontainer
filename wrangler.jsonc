@@ -4,17 +4,8 @@
   "main": "src/index.ts",
   "containers": [
     {
-      "binding": "testcontainer",
-      "class_name": "TestContainer",
+      "class_name": "Container",
       "image": "Dockerfile"
     }
-  ],
-  "durable_objects": {
-    "bindings": [
-      {
-        "name": "testcontainer",
-        "class_name": "TestContainer"
-      }
-    ]
-  }
+  ]
 }
