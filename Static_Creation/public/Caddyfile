@@ -1,5 +1,15 @@
 :8080 {
-root * /app/public
-php_fastcgi 0.0.0.0:9000
-file_server
+  root * /app/public
+  file_server
+
+  handle {
+    root * /app/public
+    rewrite * /index.php
+    reverse_proxy localhost:9000 { 
+      transport fastcgi {
+        split .php
+        capture_stderr
+      }
+    }
+  }
 }
