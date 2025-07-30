@@ -1,7 +1,11 @@
 {
   "name": "testcontainer",
   "compatibility_date": "2025-07-29",
-  "container": {
-    "image": "Dockerfile"
+  "main": "src/index.ts", // ⚠️ 必需字段，即使不做实事
+  "deployment": {
+    "containers": {
+      "enabled": true,
+      "image": "Dockerfile"
+    }
   }
 }
